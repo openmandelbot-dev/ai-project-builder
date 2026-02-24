@@ -1,72 +1,53 @@
-# AI Project Builder: Python for AI Builders (Weeks 1-2)
+# AI Project Builder
 
-This repository is organized week-wise so you can study, build, and ship in a clear sequence.
+A professional 2-week course for builders who want to use Python to create and ship AI-adjacent tools.
 
-## Repository Structure
+## Course Snapshot
+- Duration: 2 weeks (10 instructional days)
+- Level: Beginner to early intermediate
+- Format: Learn, build, validate, deploy
+- Outcome: Ship an automated API-based Python job
+
+## Modular Repository Layout
 
 ```text
-weeks/
-  week-1/
-    README.md              # Week 1 outcomes and daily plan
-    modules.md             # Foundation lessons and exercises
-    projects/
-      cli_calculator.py
-      weather_fetcher.py
-  week-2/
-    README.md              # Week 2 outcomes and execution plan
-    projects.md            # Project specs and acceptance criteria
-    milestone.md           # Deployment milestone and checklist
-    projects/
-      file_automation.py
-      web_scraper.py
-    scripts/
-      milestone_api_job.py
+docs/
+  course-handbook.md
+  syllabus.md
+  schedule.md
+  assessments.md
+  setup.md
+  platforms.md
+modules/
+  week-01-python-foundations/
+    README.md
+    lessons/
+    lab/
+  week-02-automation-delivery/
+    README.md
+    lessons/
+    lab/
+projects/
+  week-01/
+  week-02/
+automation/
+  milestone_api_job.py
 .github/workflows/
-  milestone-api-job.yml    # Scheduled milestone automation
+  milestone-api-job.yml
 requirements.txt
 ```
 
-## Learning Outcomes
+## Start Here
+1. Read `docs/course-handbook.md`
+2. Complete environment setup in `docs/setup.md`
+3. Follow `docs/schedule.md`
+4. Build weekly projects from `projects/`
+5. Complete milestone in `docs/assessments.md`
 
-### Week 1
-- Python fundamentals for builders: variables, loops, functions, and OOP basics.
-- API fundamentals: make requests and parse JSON.
-- Tooling: virtual environments and practical debugging.
-- Build two starter projects.
-
-### Week 2
-- Build automation and scraping projects.
-- Improve reliability with validation and error handling.
-- Deploy a scheduled API script using GitHub Actions.
-
-## Setup
+## Quick Setup
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
-
-## How To Run Projects
-
-### Week 1
-```bash
-python weeks/week-1/projects/cli_calculator.py
-python weeks/week-1/projects/weather_fetcher.py --lat 37.7749 --lon -122.4194
-```
-
-### Week 2
-```bash
-python weeks/week-2/projects/file_automation.py
-python weeks/week-2/projects/web_scraper.py
-python weeks/week-2/scripts/milestone_api_job.py
-```
-
-## Free Learning Platforms
-- freeCodeCamp
-- Kaggle
-- Google Colab
-
-## Milestone
-Deploy and verify a Python script that consumes a public API and runs automatically on schedule.
-See `weeks/week-2/milestone.md`.
