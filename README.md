@@ -37,6 +37,9 @@ automation/
 requirements.txt
 ```
 
+## Getting Started
+Read `docs/getting-started.md` for a complete first-run setup and execution walkthrough.
+
 ## Start Here
 1. Read `docs/course-handbook.md`
 2. Complete environment setup in `docs/setup.md`
